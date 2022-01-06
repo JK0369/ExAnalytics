@@ -7,15 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E647AD10718745473856E43 /* Pods_ExAnalytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F6C6181663F136496AF2815 /* Pods_ExAnalytics.framework */; };
 		C6F956C6278725440017A27B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6F956C5278725440017A27B /* AppDelegate.swift */; };
 		C6F956C8278725440017A27B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6F956C7278725440017A27B /* SceneDelegate.swift */; };
 		C6F956CA278725440017A27B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6F956C9278725440017A27B /* ViewController.swift */; };
 		C6F956CD278725440017A27B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6F956CB278725440017A27B /* Main.storyboard */; };
 		C6F956CF278725450017A27B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6F956CE278725450017A27B /* Assets.xcassets */; };
 		C6F956D2278725450017A27B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6F956D0278725450017A27B /* LaunchScreen.storyboard */; };
+		C6F956DA278725FA0017A27B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C6F956D9278725FA0017A27B /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4F6C6181663F136496AF2815 /* Pods_ExAnalytics.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExAnalytics.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6F956C2278725440017A27B /* ExAnalytics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExAnalytics.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6F956C5278725440017A27B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C6F956C7278725440017A27B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,9 @@
 		C6F956CE278725450017A27B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C6F956D1278725450017A27B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C6F956D3278725450017A27B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C6F956D9278725FA0017A27B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		C82547539C7AC17E2C493CDF /* Pods-ExAnalytics.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExAnalytics.debug.xcconfig"; path = "Target Support Files/Pods-ExAnalytics/Pods-ExAnalytics.debug.xcconfig"; sourceTree = "<group>"; };
+		F9410A963A0ABBED98386172 /* Pods-ExAnalytics.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExAnalytics.release.xcconfig"; path = "Target Support Files/Pods-ExAnalytics/Pods-ExAnalytics.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +37,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E647AD10718745473856E43 /* Pods_ExAnalytics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		792695C812C28E6F81873077 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4F6C6181663F136496AF2815 /* Pods_ExAnalytics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		80262156335A41A710C5CA8B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C82547539C7AC17E2C493CDF /* Pods-ExAnalytics.debug.xcconfig */,
+				F9410A963A0ABBED98386172 /* Pods-ExAnalytics.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		C6F956B9278725440017A27B = {
 			isa = PBXGroup;
 			children = (
 				C6F956C4278725440017A27B /* ExAnalytics */,
 				C6F956C3278725440017A27B /* Products */,
+				80262156335A41A710C5CA8B /* Pods */,
+				792695C812C28E6F81873077 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +82,7 @@
 		C6F956C4278725440017A27B /* ExAnalytics */ = {
 			isa = PBXGroup;
 			children = (
+				C6F956D9278725FA0017A27B /* GoogleService-Info.plist */,
 				C6F956C5278725440017A27B /* AppDelegate.swift */,
 				C6F956C7278725440017A27B /* SceneDelegate.swift */,
 				C6F956C9278725440017A27B /* ViewController.swift */,
@@ -74,9 +101,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C6F956D6278725450017A27B /* Build configuration list for PBXNativeTarget "ExAnalytics" */;
 			buildPhases = (
+				C0B5452028F16C29A59DB218 /* [CP] Check Pods Manifest.lock */,
 				C6F956BE278725440017A27B /* Sources */,
 				C6F956BF278725440017A27B /* Frameworks */,
 				C6F956C0278725440017A27B /* Resources */,
+				48E9476B72660B3570051C1B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -126,12 +155,55 @@
 			buildActionMask = 2147483647;
 			files = (
 				C6F956D2278725450017A27B /* LaunchScreen.storyboard in Resources */,
+				C6F956DA278725FA0017A27B /* GoogleService-Info.plist in Resources */,
 				C6F956CF278725450017A27B /* Assets.xcassets in Resources */,
 				C6F956CD278725440017A27B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		48E9476B72660B3570051C1B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ExAnalytics/Pods-ExAnalytics-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ExAnalytics/Pods-ExAnalytics-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ExAnalytics/Pods-ExAnalytics-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C0B5452028F16C29A59DB218 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ExAnalytics-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C6F956BE278725440017A27B /* Sources */ = {
@@ -217,7 +289,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -272,7 +344,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -284,6 +356,7 @@
 		};
 		C6F956D7278725450017A27B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C82547539C7AC17E2C493CDF /* Pods-ExAnalytics.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -297,6 +370,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -312,6 +386,7 @@
 		};
 		C6F956D8278725450017A27B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F9410A963A0ABBED98386172 /* Pods-ExAnalytics.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -325,6 +400,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
