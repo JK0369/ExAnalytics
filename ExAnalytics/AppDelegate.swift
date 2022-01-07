@@ -13,6 +13,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
     FirebaseApp.configure()
+    
+    #if DEBUG
+    var newArguments = ProcessInfo.processInfo.arguments
+    newArguments.append("-FIRDebugEnabled")
+    ProcessInfo.processInfo.setValue(newArguments, forKey: "arguments")
+    #endif
+    
     return true
   }
 
